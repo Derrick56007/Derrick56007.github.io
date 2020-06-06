@@ -1,0 +1,531 @@
+<!doctype html>
+<html>
+	<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	
+	<title>Derrick Liu</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+	
+	<style type="text/css">
+	@import url(
+	https://fonts.googleapis.com/css?family=Lato:400,700
+);
+body {
+	background: #fff;
+	font-family: Lato, sans-serif;
+	margin: 0 0 80px;
+}
+a {
+	color: #2ecc71;
+}
+a:focus,
+a:hover {
+	color: #f1c40f;
+	text-decoration: none;
+}
+p {
+	line-height: 1.5;
+	margin: 0;
+}
+p + p {
+	margin-top: 10px;
+}
+h1,
+h2,
+h3,
+h4 {
+	margin-top: 0
+}
+section {
+	margin-top: 30px;
+}
+li {
+	line-height: 1.8;
+	list-style: none;
+}
+li:before {
+	content: "\f052";
+	float: left;
+	font: 13px Octicons;
+	margin-top: 6px;
+	margin-left: -20px;
+	opacity: .5;
+	position: absolute;
+}
+blockquote {
+	border-left: 5px solid #e7e9ec;
+	font-size: 14px;
+}
+em {
+	color: #95a5a6;
+	font-weight: normal;
+	font-style: normal;
+}
+h4 span:first-child {
+	color: #000;
+	font-weight: bold;
+}
+.container {
+	max-width: 750px;
+	padding: 0 30px;
+}
+.col-sm-6 {
+	margin-bottom: 10px;
+}
+.col-sm-12 h4 {
+	margin-top: 12px; 
+}
+.col-sm-12 + .col-sm-12 {
+	margin-top: 30px;
+}
+#header {
+	background: #f4f6f6;
+	padding: 50px 0;
+	margin-bottom: 30px;
+}
+#header h2 {
+	color: #95a5a6;
+	font-size: 24px;
+}
+#content h3 {
+	color: #f1c40f;
+	font-size: 26px;
+	margin-top: -4px;
+}
+#content aside {
+	text-align: right;
+	padding-right: 30px;
+}
+#profiles .network {
+	text-transform: capitalize;
+}
+#work .position,
+#volunteer .position {
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+#education .area {
+	font-weight: bold;
+}
+#education .area:before {
+	content: "\f0d7";
+	font: 16px Octicons;
+	margin-right: 6px;
+}
+#education .studyType {
+	margin-left: 25px;
+}
+#awards .summary,
+#publications .summary {
+	margin-top: 8px;
+}
+#publications .website a:before {
+	content: attr(href);
+}
+
+@media (min-width: 480px) {
+	.strike-through {
+		border-top: 1px solid darkgrey;
+		height: 20px;
+		margin-top: 12px;
+		margin-bottom: -2px;
+		position: relative;
+	}
+	.strike-through span,
+	.strike-through a {
+		background: #fff;
+		position: absolute;
+	}
+	.strike-through span:first-child {
+		padding-right: 20px;
+		margin-top: -12px;
+	}
+	.strike-through span + span {
+		font-size: 14px;
+		margin-top: -10px;
+		padding-left: 20px;
+		right: 0;
+	}
+}
+@media (max-width: 768px) {
+	.col-sm-6:last-child {
+		margin-bottom: 0px;
+	}
+	#content aside {
+		margin-bottom: 20px;
+		padding-right: 0;
+		text-align: left;
+	}
+	#publications .website a:before {
+		content: "View publication";
+	}
+}
+@media (max-width: 480px) {
+	h1 {
+		font-size: 26px;
+	}
+	.date {
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	.strike-through span:first-child {
+		margin-bottom: 7px;
+	}
+	.strike-through span {
+		display: block;
+	}	
+	#header {
+		margin-bottom: 10px;
+		padding: 40px 0;
+	}
+	#actions {
+		display: none;
+	}
+}
+        
+input[type=checkbox] {
+  display: none;
+}
+
+.container img {
+  margin: 100px;
+  transition: transform 0.25s ease;
+  cursor: zoom-in;
+}
+
+input[type=checkbox]:checked ~ label > img {
+  transform: scale(2);
+  cursor: zoom-out;
+}
+
+	</style>
+	
+	</head>
+	<body>
+	
+	<header id="header" style="background: rgba(0, 0, 0, .95); padding-bottom: 30px">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-9 col-sm-push-3">
+					<h1 style="color: white;">
+						Dance Notes
+					</h1>
+					<h2>
+						Case Study
+					</h2>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="content" class="container">
+
+<!--
+	<section id="contact" class="row">
+		<aside class="col-sm-3">
+			<h3>Contact</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<strong>Email</strong>
+				<div class="email">derrick56007@hotmail.com</div>
+			</div>
+			<div class="col-sm-6">
+				<strong>Phone</strong>
+				<div class="phone">(510) 881-3661</div>
+			</div>
+			<div class="col-sm-6">
+				<strong>Website</strong>
+				<div class="website">
+					<a href="Derrick56007.github.io">Derrick56007.github.io</a>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+-->
+<!--
+	<section id="about" class="row">
+		<aside class="col-sm-3">
+			<h3>Overview</h3>
+		</aside>
+		<div class="col-sm-9">
+			<p>Hello! I am Derrick Liu. I am currently a fourth year student in UCSD and major in Data Science. I am interested in UI/UX design and Machine Learning.</p>
+		</div>
+	</section>
+-->
+        <section class="row">
+            		<aside class="col-sm-3">
+			<h3></h3>
+		</aside>
+                			<div class="col-sm-6">
+				<strong>Project Link</strong><br>
+				<a href="http://a10-dancenotes.herokuapp.com">http://a10-dancenotes.herokuapp.com</a>
+			</div>
+        </section>
+        
+	<section id="about" class="row" style="margin-top: 10px;">
+
+		<aside class="col-sm-3">
+			<h3>Problem</h3>
+		</aside>
+		<div class="col-sm-9">
+			<p>Learning the choreography of dance is difficult. <br><br>It requires memorization of <u>movement sets that are in time</u> with the music. <br> Often times, audio players don’t allow users to loop certain sections of the audio or change the playback rate. Users also struggle with memorizing some a certain part of the choreography.</p>
+		</div>
+	</section>
+        
+
+        
+	<section id="about" class="row">
+		<aside class="col-sm-3">
+			<h3>Competitive Audit</h3>
+		</aside>
+		<div class="col-sm-9">
+                            				<h4 class="strike-through">
+                </h4>
+			<p>Without our application, users will need to go on online video-sharing platforms, mainly Youtube, to learn their dance choreography.</p> 
+            <br>
+            
+            <h4>Youtube & Vimeo </h2>
+            <ul>
+            <li>
+                allows its users to control the pace of the video they are watching
+                </li>
+                <li><u>did not offer a feature for the users to loop a certain part</u> of the song</li>
+                <li>user will need to keep going back on their device during their dance practice and repeat a part of a choreography manually</li>
+            </ul>
+                        <h4>Looper</h2>
+            <ul>
+            <li>
+                one of the inspirations for our application
+                </li>
+                <li><u>allows their users to loop</u> a certain part of a video, which is one of the features we wish to offer in our application</li>
+                <li>does not allow their users to <u>manage the speed</u> of the video itself</li>
+            </ul>
+            
+            <p>We offer <u>both of those features in one application</u>, so the user wouldn't need to move from one application to another in order to achieve the final results they want. </p>
+		</div>
+	</section>        
+<!--
+	<section id="profiles" class="row">
+		<aside class="col-sm-3">
+			<h3>Profiles</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+				<div class="col-sm-6">
+					<strong class="network">
+						Github
+					</strong>
+					<div class="username">
+							derrick56007
+					</div>
+				</div>
+				 <div class="col-sm-6">
+					<strong class="network">
+						LinkedIn
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="https://soundcloud.com/dandymusicnl">dandymusicnl</a>
+						</div>
+					</div>
+				</div> 
+			</div>
+		</div>
+	</section>
+-->
+
+	<section id="work" class="row">
+		<aside class="col-sm-3">
+			<h3>Storyboards</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+                                				<h4 class="strike-through">
+                </h4>
+				<div class="summary" style="margin-bottom: 30px;">
+					<p>Let's look at some scenarios where Dance Notes might be helpful</p>
+                    <p>(click to zoom)</p>
+				</div>
+                
+				<h4 class="strike-through">
+					<span>#1</span>
+                </h4>
+                <div class="container" style="width: 100%">
+                  <input type="checkbox" id="zoomCheck">
+                  <label for="zoomCheck">
+                    <img src="sb1.png" style="width: 100%; margin: 0">
+                  </label>
+                </div>
+                
+
+				<h4 class="strike-through">
+					<span>#2</span>
+                </h4>
+                <div class="container" style="width: 100%">
+                  <input type="checkbox" id="zoomCheck">
+                  <label for="zoomCheck">
+                    <img src="sb2.png" style="width: 100%; margin: 0">
+                  </label>
+                </div>
+                				<h4 class="strike-through">
+					<span>#3</span>
+                </h4>
+                <div class="container" style="width: 100%">
+                  <input type="checkbox" id="zoomCheck">
+                  <label for="zoomCheck">
+                    <img src="sb3.png" style="width: 100%; margin: 0">
+                  </label>
+                </div>
+			</div>
+			</div>
+		</div>
+	</section>
+        
+<section id="work" class="row">
+		<aside class="col-sm-3">
+			<h3>Prototypes</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+                				<h4 class="strike-through">
+                </h4>
+                <h4>
+                <span>Low fidelity paper prototype & wireframe prototype</span></h4>
+                
+				<div class="summary" style="margin-bottom: 30px;">
+					<p>First: allow for choregraphy sharing and editing<br>Second: simple list navigation and choreography management</p>
+				</div>
+                
+				<h4>
+					<span>#1</span>
+                    
+                </h4>
+                <div class="container" style="width: 100%">
+                  <input type="checkbox" id="zoomCheck">
+                  <label for="zoomCheck">
+                    <img src="pt1.1.PNG" style="width: 100%; margin: 0">
+                  </label>
+                </div>
+                                <div class="container" style="width: 100%">
+                  <input type="checkbox" id="zoomCheck">
+                  <label for="zoomCheck">
+                    <img src="pt1.1.PNG" style="width: 100%; margin: 0">
+                  </label>
+                </div>
+                                <div class="container" style="width: 100%">
+                  <input type="checkbox" id="zoomCheck">
+                  <label for="zoomCheck">
+                    <img src="pt1.2.PNG" style="width: 100%; margin: 0">
+                  </label>
+                </div>
+                
+
+				<h4>
+					<span>#2</span>
+                </h4>
+
+                <div class="container" style="width: 100%">
+                  <input type="checkbox" id="zoomCheck">
+                  <label for="zoomCheck">
+                    <img src="pat2.png" style="width: 100%; margin: 0">
+                  </label>
+                </div>
+                <div class="container" style="width: 100%">
+                  <input type="checkbox" id="zoomCheck">
+                  <label for="zoomCheck">
+                    <img src="pat2.1.PNG" style="width: 100%; margin: 0">
+                  </label>
+                </div>
+			</div>
+			</div>
+		</div>
+	</section>  
+        
+        <section id="work" class="row">
+		<aside class="col-sm-3">
+			<h3>Functional Prototype</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+                </h4>
+                    
+                
+				<div class="summary" style="margin-bottom: 30px;">
+					<p>Based on several ideas from our storyboards, we then designed a paper prototype to illustrate the significant & interactive elements that we hope to achieve in our application. </p>
+<!--                    <p>Click to zoom.</p>-->
+				</div>
+                
+                <div class="container" style="width: 100%">
+                  <input type="checkbox" id="zoomCheck">
+                  <label for="zoomCheck">
+                    <img src="fp1.JPG" style="width: 100%; margin: 0">
+                  </label>
+                </div>
+                                <div class="container" style="width: 100%">
+                  <input type="checkbox" id="zoomCheck">
+                  <label for="zoomCheck">
+                    <img src="fp1.1.JPG" style="width: 100%; margin: 0">
+                  </label>
+                </div>
+			</div>
+			</div>
+		</div>
+	</section> 
+        	<section id="about" class="row">
+		<aside class="col-sm-3">
+			<h3>User Testing</h3>
+		</aside>
+		<div class="col-sm-9">
+            
+            				<h4 class="strike-through">
+                </h4>
+			<p>Users were asked to perform several tasks to explore the full function of our app.</p> 
+
+            
+                                            <div class="container" style="width: 100%">
+                  <input type="checkbox" id="zoomCheck">
+                  <label for="zoomCheck">
+                    <img src="ut1.JPG" style="width: 100%; margin: 0">
+                  </label>
+                </div>
+                        <p>
+            To get users feedbacks, we execute two ways of user testing - in person & online A/B testing. In both testings, users were asked to do some tasks that reflects the core functionality of our application. We then take their suggestions into account. In terms of A/B testing, we use Google Analytics to determine which design of the home page that gives users a better browsing experience.</p><br>
+                                                        <div class="container" style="width: 100%">
+                  <input type="checkbox" id="zoomCheck">
+                  <label for="zoomCheck">
+                    <img src="ga.JPG" style="width: 100%; margin: 0">
+                  </label>
+                </div>
+		</div>
+	</section>  
+        
+        	</section> 
+    	<section id="about" class="row" style="margin-top: 10px;">
+
+		<aside class="col-sm-3">
+			<h3>Final Product</h3>
+		</aside>
+		<div class="col-sm-9">
+            				<h4 class="strike-through">
+                </h4>
+                                                                <div class="container" style="width: 100%">
+                  <input type="checkbox" id="zoomCheck">
+                  <label for="zoomCheck">
+                    <img src="final.png" style="width: 100%; margin: 0">
+                  </label>
+                </div>
+			<p>Dance Notes allows users to add their own <u>custom cues</u>, such as another audio track over the music that can help them in any way they want, such as adding their own counts to the music or give <u>reminders at certain times</u> in the audio. There are also text and image cues that users can add that will show on screen. In addition, users have the ability to <u>choose which sections of audio to loop</u> as well as <u>change the playback rate</u>.</p>
+		</div>
+	</section>
+	</body>
+</html>

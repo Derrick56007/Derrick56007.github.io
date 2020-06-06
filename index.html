@@ -129,7 +129,7 @@ h4 span:first-child {
 
 @media (min-width: 480px) {
 	.strike-through {
-		border-top: 1px solid #f4f6f6;
+		border-top: 1px solid darkgrey;
 		height: 20px;
 		margin-top: 12px;
 		margin-bottom: -2px;
@@ -192,16 +192,21 @@ h4 span:first-child {
 	</head>
 	<body>
 	
-	<header id="header">
+	<header id="header" style="background: rgba(0, 0, 0, .95); padding-bottom: 30px;">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-9 col-sm-push-3">
-					<h1>
+					<h1 style="color: white;">
 						Derrick Liu
 					</h1>
 					<h2>
-						Programmer
+						Data Scientist
 					</h2>
+				</div>
+				<div class="col">
+				<div style="display: flex; border: 3px solid white; width: 156px; border-radius: 10em">
+					<img src="face.jpeg" style="width: 150px; border-radius: 10em">
+				</div>
 				</div>
 			</div>
 		</div>
@@ -210,7 +215,7 @@ h4 span:first-child {
 
 	<section id="contact" class="row">
 		<aside class="col-sm-3">
-			<h3>Contact</h3>
+			<h3>CONTACT</h3>
 		</aside>
 		<div class="col-sm-9">
 			<div class="row">
@@ -228,17 +233,24 @@ h4 span:first-child {
 					<a href="Derrick56007.github.io">Derrick56007.github.io</a>
 				</div>
 			</div>
+                			<div class="col-sm-6">
+				<strong>Resume</strong>
+				<div class="website">
+					<a href="derrick_liu_resume.pdf">resume.pdf</a>
+				</div>
+			</div>
 			</div>
 		</div>
 	</section>
 	<section id="about" class="row">
 		<aside class="col-sm-3">
-			<h3>About</h3>
+			<h3>BIO</h3>
 		</aside>
 		<div class="col-sm-9">
-			<p>This website is made to show in detail the many projects I have worked on in the past few years at UCSD. This will include a mobile application made to help people learn how to dance as well as a multiplayer strategy game</p>
+			<p>Hello! I am Derrick Liu. I am currently a fourth year student in UCSD and major in Data Science. I am interested in UI/UX design and Machine Learning.</p>
 		</div>
 	</section>
+<!--
 	<section id="profiles" class="row">
 		<aside class="col-sm-3">
 			<h3>Profiles</h3>
@@ -253,7 +265,7 @@ h4 span:first-child {
 							derrick56007
 					</div>
 				</div>
-				<!-- <div class="col-sm-6">
+				 <div class="col-sm-6">
 					<strong class="network">
 						LinkedIn
 					</strong>
@@ -262,14 +274,15 @@ h4 span:first-child {
 							<a href="https://soundcloud.com/dandymusicnl">dandymusicnl</a>
 						</div>
 					</div>
-				</div> -->
+				</div> 
 			</div>
 		</div>
 	</section>
+-->
 
 	<section id="work" class="row">
 		<aside class="col-sm-3">
-			<h3>Work</h3>
+			<h3>PROJECTS</h3>
 		</aside>
 		<div class="col-sm-9">
 			<div class="row">
@@ -287,14 +300,58 @@ h4 span:first-child {
 					Main Programmer/Designer
 				</div>
 				<div class="summary">
-					<p>Dance Notes is like an assistant app for dancers. It offers a visual and auditory cue system that guides dancers in learning choreographies more efficiently. Compared to other audio playing apps, we also let users loop specified sections & control the speed of the music they’re dancing to. </p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dance Notes is like an assistant app for dancers. It offers a visual and auditory cue system that guides dancers in learning choreographies more efficiently. Compared to other audio playing apps, we also let users loop specified sections & control the speed of the music they’re dancing to. </p>
 				</div>
 
 				<br>
 
 				<div style="display: flex;">
-					<img src="dancenotes.png" style="width: auto">
+					<img src="dancenotes.png" style="width: 100%">
 				</div>
+                
+                <div>
+                    <div style="margin: auto; margin-top: 10px; width: 150px; height: 30px; line-height: 30px; background: black; color: white; text-align: center">
+                        <a href="case_study.html">Read Case Study</a></div>
+                </div>
+
+				<!--<ul class="highlights">
+				<h4>Highlights</h4>
+					<li class="bullet">Build an algorithm for artist to detect if their music was violating copy right infringement laws</li>
+					<li class="bullet">Won best overall</li>
+					<li class="bullet">Optimized an algorithm that holds the current world record for Weisman Scores</li>
+				</ul>-->
+			</div>
+			</div>
+            <br><br>
+            			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Flipbook Generator</span>
+					<span class="date">
+						2020-1-01 — Current
+					</span>
+				</h4>
+<!--
+				<div class="website pull-right">
+					<a href=" ​http://a10-dancenotes.herokuapp.com">​http://a10-dancenotes.herokuapp.com</a>
+				</div>
+-->
+				<div class="position">
+					Main Programmer/Designer
+				</div>
+				<div class="summary">
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A flipbook is an easy and playful way to view/share memories in motion. Although a simple flipbook can be made by anyone, creating them en masse can become a tedious process. A tool where users can upload formats of various sorts (videos/gif/animations) and see the final product before printing/cutting can make the process more efficient.</p>
+				</div>
+
+				<br>
+
+				<div style="display: flex;">
+					<img src="flip.jpeg" style="width: 100%">
+				</div>
+                
+                <div>
+                    <div style="margin: auto; margin-top: 10px; width: 150px; height: 30px; line-height: 30px; background: black; color: white; text-align: center">
+                        <a>Coming Soon...</a></div>
+                </div>
 
 				<!--<ul class="highlights">
 				<h4>Highlights</h4>
@@ -306,207 +363,5 @@ h4 span:first-child {
 			</div>
 		</div>
 	</section>
-<!--
-	<section id="volunteer" class="row">
-		<aside class="col-sm-3">
-			<h3>Volunteer</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>CoderDojo</span>
-					<span class="date">
-						2012-01-01 — 2013-01-01
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://coderdojo.com/">http://coderdojo.com/</a>
-				</div>
-				<div class="position">
-					Teacher
-				</div>
-				<div class="summary">
-					<p>Global movement of free coding clubs for young people.</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Awarded &#x27;Teacher of the Month&#x27;</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
-	
-	<section id="education" class="row">
-		<aside class="col-sm-3">
-			<h3>Education</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>University of Oklahoma</span>
-					<span class="date">
-						2011-06-01 — 2014-01-01
-					</span>
-				</h4>
-				<div class="area">
-					Information Technology
-				</div>
-				<div class="studyType">
-					Bachelor
-				</div>
-				<h4>Courses</h4>
-				<ul class="courses">
-					<li>DB1101 - Basic SQL</li>
-					<li>CS2011 - Java Introduction</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
-	
-	<section id="awards" class="row">
-		<aside class="col-sm-3">
-			<h3>Awards</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Digital Compression Pioneer Award</span>
-				</h4>
-				<div class="date pull-right">
-					<em>Awarded</em>
-					2014-11-01
-				</div>
-				<div class="awarder">
-					<em>by</em>
-					<strong>Techcrunch</strong>
-				</div>
-				<div class="summary">
-					There is no spoon.
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
-	
-	<section id="publications" class="row">
-		<aside class="col-sm-3">
-			<h3>Publications</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Video compression for 3d media</span>
-					<span class="date">
-						2014-10-01
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)"></a>
-				</div>
-				<div class="publisher">
-					<em>Published by</em>
-					<strong>Hooli</strong>
-				</div>
-				<div class="summary">
-					<p>Innovative middle-out compression algorithm that changes the way we store data.</p>
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
-	
-	<section id="skills" class="row">
-		<aside class="col-sm-3">
-			<h3>Skills</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Web Development</h4>
-				</div>
-				<ul class="keywords">
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>Javascript</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Compression</h4>
-				</div>
-				<ul class="keywords">
-					<li>Mpeg</li>
-					<li>MP4</li>
-					<li>GIF</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="languages" class="row">
-		<aside class="col-sm-3">
-			<h3>Languages</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<div class="language">
-					<strong>English</strong>
-				</div>
-				<div class="fluency">
-					Native speaker
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="interests" class="row">
-		<aside class="col-sm-3">
-			<h3>Interests</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Wildlife</h4>
-				</div>
-				<ul class="keywords">
-					<li>Ferrets</li>
-					<li>Unicorns</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
-	
-	<section id="references" class="row">
-		<aside class="col-sm-3">
-			<h3>References</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<blockquote class="reference">
-					<p>It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company.</p>
-					<p class="name">
-						<strong>— Erlich Bachman</strong>
-					</p>
-				</blockquote>
-			</div>
-			</div>
-		</div>
-	</section>
-
-	</div>
-	-->
 	</body>
 </html>
